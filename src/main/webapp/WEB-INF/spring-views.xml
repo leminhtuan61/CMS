@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="login"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/views/login.jsp" />
+	</bean>
+	<bean id="register"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/views/register.jsp" />
+	</bean>
+	<bean id="edit-profile"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/views/edit-profile.jsp" />
+	</bean>
+
+	<bean id="add-content"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/views/add-content.jsp" />
+	</bean>
+	<bean id="view-content"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/views/view-content.jsp" />
+	</bean>
+
+	<bean id="edit-content"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/views/edit-content.jsp" />
+	</bean>
+	<bean id="home-page"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/views/home-page.jsp" />
+	</bean>
+	<bean id="generic_error"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/errors/generic_error.jsp" />
+	</bean>
+	<bean id="404"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/errors/404.jsp" />
+	</bean>
+
+</beans>

@@ -1,0 +1,109 @@
+.navbar {
+	background-color: #f8f8f8;
+	border: 1px solid #c0bfbf;
+}
+
+.navbar-brand {
+	color: #a0a1a4;
+}
+.msg{
+	color: green;
+	font-style: italic;
+}
+
+.col-md-2 {
+	height: 1080px;
+	position: sticky;
+}
+
+.col:nth-child(odd) {
+	background-color: #f8f8f8;
+}
+
+.list-group {
+	margin-left: -16px;
+	margin-right: -14px;
+	margin-top: -1px;
+	border-radius: 0%;
+}
+img{
+	margin:auto;
+}
+
+.list-group-item {
+	background-color: transparent;
+}
+
+.btn-outline-secondary {
+	margin-top: 16px;
+	margin-left: 10px;
+}
+
+#title, #brief, #content, #comment, #phone, #lastName, #firstName {
+	width: 100%;
+}
+
+.error {
+	display: block;
+	color: #ff0000;
+	font-style: italic;
+	width: auto;
+}
+
+table, th, td {
+	border: 1px solid #d1d0d0;
+}
+
+table {
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #d1d0d0;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #f3f1f1;
+}
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #ffffff url('http://i.stack.imgur.com/FhHRx.gif') 50% 50%
+		no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+	overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+	display: block;
+}
+
+@media only screen and (max-width: 668px) {
+	span.input-group-text, .col-md-2, .tbl-btn {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 668px) {
+	.mb-btn, .search-btn-mb {
+		display: none;
+	}
+}
